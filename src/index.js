@@ -25,7 +25,7 @@ const store = createStore(rootReducer,compose(
     applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})),
    
     reduxFirestore(firebase,fbConfig), // redux bindings for firestore
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+
   ));
   const rrfConfig = {
     userProfile: 'users',
